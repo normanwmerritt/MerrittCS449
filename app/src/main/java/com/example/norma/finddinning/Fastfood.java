@@ -32,6 +32,8 @@ public class Fastfood extends AppCompatActivity {
         fastfoodrests.add("KFC");
         fastfoodrests.add("Culver's");
 
+
+
         int selectionnumber = 0;
         Random ran = new Random();
         selectionnumber = ran.nextInt(fastfoodrests.size());

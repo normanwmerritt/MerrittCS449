@@ -1,6 +1,7 @@
 package com.example.norma.finddinning;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -24,21 +25,31 @@ public class Fastfood extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fastfood);
         Intent intent = getIntent();
+       // SharedPreferences sharedPref = null;
 
         ArrayList<String> fastfoodrests = new ArrayList<String>();
 
 
-        fastfoodrests.add("McDonald's");
-        fastfoodrests.add("Chick-fil-A");
-        fastfoodrests.add("Baja");
-        fastfoodrests.add("Burger King");
-        fastfoodrests.add("Taco Bell");
-        fastfoodrests.add("Sonic Drive-In");
-        fastfoodrests.add("Subway");
-        fastfoodrests.add("Wendy's");
-        fastfoodrests.add("Popeyes");
-        fastfoodrests.add("KFC");
-        fastfoodrests.add("Culver's");
+            fastfoodrests.add("McDonald's");
+            fastfoodrests.add("Chick-fil-A");
+            fastfoodrests.add("Baja");
+            fastfoodrests.add("Burger King");
+            fastfoodrests.add("Taco Bell");
+            fastfoodrests.add("Sonic Drive-In");
+            fastfoodrests.add("Subway");
+            fastfoodrests.add("Wendy's");
+            fastfoodrests.add("Popeyes");
+            fastfoodrests.add("KFC");
+            fastfoodrests.add("Culver's");
+
+
+        /*if (1 == sharedPref.getInt("rtype", 0)){
+            fastfoodrests.add("Gates Bar-B-Q");
+            fastfoodrests.add("The Cheesecake Factory");
+            fastfoodrests.add("Fogo de Chao");
+            fastfoodrests.add("Pizza 51");
+            fastfoodrests.add("IHOP");
+        }*/
 
 
 

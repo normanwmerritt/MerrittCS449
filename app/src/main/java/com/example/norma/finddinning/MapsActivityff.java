@@ -39,8 +39,9 @@ public class MapsActivityff extends FragmentActivity implements OnMapReadyCallba
 
         LatLng location = new LatLng(mMap.getMyLocation().getLatitude(), mMap.getMyLocation().getLongitude());
 
-        mMap.addMarker(new MarkerOptions().position(location).title("Marker"));
+        mMap.addMarker(new MarkerOptions().position(location).title("Current"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(location));
+
     }
     @Override
     protected void onCreate(Bundle savedInstanceState) {

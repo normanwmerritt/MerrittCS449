@@ -58,7 +58,7 @@ public class Finddinning extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Random ran = new Random();
-                 int sel = ran.nextInt(2);
+                int sel = ran.nextInt(2);
                 if (sel == 0){Displaydinein();}
                 if (sel == 1){Displayfastfood();}
 

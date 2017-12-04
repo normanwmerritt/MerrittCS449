@@ -51,7 +51,7 @@ public class MapsActivityff extends FragmentActivity implements OnMapReadyCallba
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
-        setUpMap();
+
 
     }
 
@@ -77,8 +77,10 @@ public class MapsActivityff extends FragmentActivity implements OnMapReadyCallba
             //                                          int[] grantResults)
             // to handle the case where the user grants the permission. See the documentation
             // for ActivityCompat#requestPermissions for more details.
+
             return;
         }
+
         mMap.setMyLocationEnabled(true);
 
 
@@ -86,12 +88,18 @@ public class MapsActivityff extends FragmentActivity implements OnMapReadyCallba
         // Add a marker in Sydney and move the camera
 
 
-        LatLng location = new LatLng(mMap.getMyLocation().getLatitude(), mMap.getMyLocation().getLongitude());
+        LatLng sydney = new LatLng(-33.852, 151.211);
+        mMap.addMarker(new MarkerOptions().position(sydney)
+                .title("Marker in Sydney"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
 
-        mMap.addMarker(new MarkerOptions().position(location).title("Marker"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(location));
+        //LatLng location = new LatLng(mMap.getMyLocation().getLatitude(), mMap.getMyLocation().getLongitude());
+
+        //LatLng location2 = new LatLng(-34,151);
+
+        //mMap.addMarker(new MarkerOptions().position(location2).title("Marker"));
+        //mMap.moveCamera(CameraUpdateFactory.newLatLng(location2));
     }
-
 
 
 

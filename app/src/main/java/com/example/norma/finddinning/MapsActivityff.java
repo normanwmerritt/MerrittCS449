@@ -93,9 +93,9 @@ public class MapsActivityff extends FragmentActivity implements OnMapReadyCallba
                 .title("Marker in Sydney"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
 
-        //LatLng location = new LatLng(mMap.getMyLocation().getLatitude(), mMap.getMyLocation().getLongitude());
+        LatLng location = new LatLng(mMap.getMyLocation().getLatitude(), mMap.getMyLocation().getLongitude());
 
-        //LatLng location2 = new LatLng(-34,151);
+        LatLng location2 = new LatLng(-34,151);
 
         //mMap.addMarker(new MarkerOptions().position(location2).title("Marker"));
         //mMap.moveCamera(CameraUpdateFactory.newLatLng(location2));
